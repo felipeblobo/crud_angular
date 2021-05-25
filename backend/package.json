@@ -1,0 +1,15 @@
+{
+  "name": "crud_angular",
+  "version": "1.0.0",
+  "description": "Crud Angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "json-server --watch db.json --port 3001"
+  },
+  "author": "Felipe Lobo",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  }
+}
