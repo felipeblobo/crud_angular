@@ -18,6 +18,17 @@ import  { MatCardModule} from '@angular/material/card';
 import { ProdutoCrudComponent } from './views/produto-crud/produto-crud.component';
 import { RedDirective } from './diretivas/red.directive';
 import { CreateProductComponent } from './components/produtos/cria-produto/create-product.component';
+import {HttpClientModule} from '@angular/common/http';
+import {MatSnackBarModule} from "@angular/material/snack-bar";
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { ProductReadComponent } from './components/produtos/product-read/product-read.component';
+import { ProductRead2Component } from './components/produtos/product-read2/product-read2.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +39,9 @@ import { CreateProductComponent } from './components/produtos/cria-produto/creat
     HomeComponent,
     ProdutoCrudComponent,
     RedDirective,
-    CreateProductComponent
+    CreateProductComponent,
+    ProductReadComponent,
+    ProductRead2Component
   ],
   imports: [
     BrowserModule,
@@ -39,7 +52,15 @@ import { CreateProductComponent } from './components/produtos/cria-produto/creat
     MatSidenavModule,
     MatListModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule,
+    MatSnackBarModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
