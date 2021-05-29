@@ -28,6 +28,8 @@ import { ProductRead2Component } from './components/produtos/product-read2/produ
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { EditaProdutoComponent } from './components/produtos/edita-produto/edita-produto.component';
+import { DeletaProdutoComponent } from './components/produtos/deleta-produto/deleta-produto.component';
 
 
 @NgModule({
@@ -41,7 +43,9 @@ import { MatSortModule } from '@angular/material/sort';
     RedDirective,
     CreateProductComponent,
     ProductReadComponent,
-    ProductRead2Component
+    ProductRead2Component,
+    EditaProdutoComponent,
+    DeletaProdutoComponent
   ],
   imports: [
     BrowserModule,

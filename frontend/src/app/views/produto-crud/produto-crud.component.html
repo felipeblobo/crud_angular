@@ -1,7 +1,13 @@
-<button mat-raised-button (click)="navigateToProductCreate()"
-    color="primary">
-    Novo Produto
-</button>
-
-
 <app-product-read></app-product-read>
+
+<a routerLink="/produtos/create">
+  <button
+    mat-raised-button
+    routerLink="/produtos/create"
+    (click)="navigateToProductCreate()"
+    color="primary"
+  >
+    Novo Produto
+  </button>
+</a>
+
